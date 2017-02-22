@@ -1,0 +1,10 @@
+#!/bin/sh -x
+
+set -ue
+
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A2F683C52980AECF
+
+echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" > /etc/apt/sources.list.d/virtualbox.list
+
+apt-get update \
+&& apt-get -y install virtualbox-5.1
