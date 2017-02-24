@@ -1,6 +1,7 @@
 binary
 binary
 chroot*
-live-image*
 cache
 .build
+netkothos*
+build.log

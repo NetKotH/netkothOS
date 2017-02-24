@@ -1,3 +1,10 @@
 live-boot
 live-config
 live-config-systemd
+firmware-realtek
+wireless-tools
+wicd-curses
+wicd-gtk
+task-laptop
+ca-certificates
+acpi
