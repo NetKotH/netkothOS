@@ -5,3 +5,5 @@ iputils-ping
 gparted
 isc-dhcp-client
 curl
+vim
+screen
