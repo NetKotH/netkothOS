@@ -10,7 +10,7 @@ LB_APT_INDICES="false"
 
 # $LB_BOOTAPPEND_LIVE: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_LIVE="boot=live components"
+LB_BOOTAPPEND_LIVE="boot=live components union=overlay"
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
@@ -25,16 +25,16 @@ LB_BOOTAPPEND_LIVE_FAILSAFE="boot=live components memtest noapic noapm nodma nom
 LB_BOOTLOADERS="syslinux,grub-efi"
 
 # $LB_CHECKSUMS: set checksums
-# (Default: md5)
-LB_CHECKSUMS="md5"
+# (Default: sha256)
+LB_CHECKSUMS="sha256"
 
 # $LB_COMPRESSION: set compression
-# (Default: none)
-LB_COMPRESSION="none"
+# (Default: bzip2)
+LB_COMPRESSION="bzip2"
 
 # $LB_ZSYNC: set zsync
-# (Default: true)
-LB_ZSYNC="true"
+# (Default: false)
+LB_ZSYNC="false"
 
 # ${LB_BUILD_WITH_CHROOT: control if we build binary images chrooted
 # (Default: true)
@@ -54,8 +54,8 @@ LB_DEBIAN_INSTALLER_DISTRIBUTION="stretch"
 LB_DEBIAN_INSTALLER_PRESEEDFILE=""
 
 # $LB_DEBIAN_INSTALLER_GUI: toggle use of GUI debian-installer
-# (Default: true)
-LB_DEBIAN_INSTALLER_GUI="true"
+# (Default: false)
+LB_DEBIAN_INSTALLER_GUI="false"
 
 # $LB_GRUB_SPLASH: set custom grub splash
 # (Default: empty)
